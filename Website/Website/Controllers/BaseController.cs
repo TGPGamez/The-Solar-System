@@ -7,9 +7,9 @@ namespace Website.Controllers
     public class BaseController : Controller
     {
         private readonly ILanguageService _languageService;
-        private readonly ILocalizationService _localizationService;
+        private readonly ILocalizationLanguageService _localizationService;
 
-        public BaseController(ILanguageService languageService, ILocalizationService localizationService)
+        public BaseController(ILanguageService languageService, ILocalizationLanguageService localizationService)
         {
             _languageService = languageService;
             _localizationService = localizationService;
