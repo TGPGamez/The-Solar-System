@@ -1,6 +1,3 @@
-CREATE DATABASE SolarSystemDB;
-USE SolarSystemDB;
-
 CREATE TABLE Languages(
 	ID INTEGER IDENTITY(1,1),
 	Culture VARCHAR(6) NOT NULL,
@@ -52,6 +49,7 @@ CREATE TABLE Languages_Planet(
 CREATE TABLE Planet_Info(
 	Planet_ID INTEGER NOT NULL,
 	LengthFromSun DECIMAL DEFAULT 0,
+	ShortDescription VARCHAR(MAX) DEFAULT 'N/A',
 	StateOfMatter VARCHAR(30) DEFAULT 'N/A',
 	Diameter FLOAT DEFAULT 0,
 	TravelTimeAroundSun FLOAT DEFAULT 0,
@@ -62,3 +60,35 @@ CREATE TABLE Planet_Info(
 	PRIMARY KEY(Planet_ID),
 	FOREIGN KEY(Planet_ID) REFERENCES Planet(ID)
 );
+
+
+CREATE PROCEDURE GetPlanetsFromCulture 
+	@culture VARCHAR(6)
+AS
+	SELECT Planet_StringResources.Name, Planet_StringResources.ShortDescription, Planet_StringResources.StateOfMatter,
+			Planet_Info.LengthFromSun, Planet_Info.Diameter, Planet_Info.TravelTimeAroundSun,
+			Planet_Info.Temperature, Planet_Info.AtmosphericPressure, Planet_Info.NumberOfMoons
+	FROM Planet
+	JOIN Planet_INFO ON Planet_Info.Planet_ID = Planet.ID
+	JOIN Languages_Planet ON Languages_Planet.Planet_ID = Planet.ID
+	JOIN Planet_StringResources ON Planet_StringResources.ID = Languages_Planet.PSR_ID
+	JOIN Languages ON Languages.ID = Languages_Planet.Language_ID
+	WHERE Languages.Culture = @culture
+GO
+
+
+CREATE PROCEDURE GetPlanetFromCulture 
+	@culture VARCHAR(6),
+	@planet_name VARCHAR(70)
+AS
+	SELECT Planet_StringResources.Name, Planet_StringResources.ShortDescription, Planet_StringResources.StateOfMatter,
+			Planet_Info.LengthFromSun, Planet_Info.Diameter, Planet_Info.TravelTimeAroundSun,
+			Planet_Info.Temperature, Planet_Info.AtmosphericPressure, Planet_Info.NumberOfMoons
+	FROM Planet
+	JOIN Planet_INFO ON Planet_Info.Planet_ID = Planet.ID
+	JOIN Languages_Planet ON Languages_Planet.Planet_ID = Planet.ID
+	JOIN Planet_StringResources ON Planet_StringResources.ID = Languages_Planet.PSR_ID
+	JOIN Languages ON Languages.ID = Languages_Planet.Language_ID
+	WHERE Languages.Culture = @culture
+	AND Planet_StringResources.Name = @planet_name
+GO

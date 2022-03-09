@@ -41,12 +41,3 @@ INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID) VALUES(3, 1, 7);
 INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID) VALUES(3, 2, 8);
 INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID) VALUES(3, 3, 9);
 
-
-
-
-SELECT Planet_StringResources.Name FROM Planet
-JOIN Planet_INFO ON Planet_Info.Planet_ID = Planet.ID
-JOIN Languages_Planet ON Languages_Planet.Planet_ID = Planet.ID
-JOIN Planet_StringResources ON Planet_StringResources.ID = Languages_Planet.PSR_ID
-JOIN Languages ON Languages.ID = Languages_Planet.Language_ID
-WHERE Languages.Culture = 'da-dk'
