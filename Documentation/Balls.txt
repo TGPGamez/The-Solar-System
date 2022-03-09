@@ -1,0 +1,10 @@
+PHYSICAL BALLS
+
+Mercury	: 3032  -> Little
+Mars		: 4221  -> Little
+Venus		: 7521  -> Little
+Earth		: 7926  -> Little
+Uranus	: 30589  -> Medium
+Neptune	: 30775  -> Medium
+Saturn	: 74897  -> Large
+Jupiter	: 88846  -> Larger
