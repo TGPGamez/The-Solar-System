@@ -8,9 +8,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./ja.css">
+    <link rel="stylesheet" href="./third.css">
 </head>
 <body>
+
+    <div class="box">
+        <a class="button" href="#popup1">Change my language</a>
+    </div>
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h1>Please select another language!</h1>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="col-sm-4">
+                <h1><a href="third.html"><img src="./pic/Flag_of_Hungary.png" id="kurva" class="hmm" alt=""></a></h1>
+                    <h1>Hungarian</h1>
+                </div>
+                <div class="col-sm-4">
+                    <h1><a href="third.html"><img src="./pic/denmarkc-logo-png-transparent.png" id="kurva"></a></h1>
+                    <h1>Danish</h1>
+                </div>
+                <div class="col-sm-4">
+                <h1><a href="third.html"><img src="./pic/640px-Flag_of_the_United_Kingdom.svg.png" id="kurva"></a></h1>  
+                    <h1>English</h1>
+                </div>       
+            </div>
+        </div>
+    </div>
+
     <div class="sun"></div>
     <div class="mercury-outline">
         <div class="mercury">
@@ -66,8 +92,31 @@
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quod autem eius quam ipsam corporis cupiditate necessitatibus, nisi amet quaerat quidem recusandae sit fuga optio, odit distinctio consequatur quasi illo.
         <a href="#" onclick="toggle()">Test</a>
     </div> -->
-    <audio controls>
+    <audio controls class="Aaudio">
         <source src="./Lucky Strike (320kbps).mp3" id="zene" type="audio/mp3">
     </audio>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 </body>
 </html>
