@@ -54,7 +54,7 @@ CREATE TABLE Planet_Info(
 	Diameter FLOAT DEFAULT 0,
 	TravelTimeAroundSun FLOAT DEFAULT 0,
 	Temperature DECIMAL DEFAULT 0,
-	AtmosphericPressure DECIMAL DEFAULT 0,
+	AtmosphericPressure DECIMAL DEFAULT null,
 	NumberOfMoons INTEGER DEFAULT 0,
 
 	PRIMARY KEY(Planet_ID),
