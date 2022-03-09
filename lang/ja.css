@@ -1,0 +1,319 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./pic/starry-night-sky-free-photo.jpeg);
+  background-size: 100%;
+  text-decoration: none;
+}
+
+.sun {
+  height: 100px;
+  width: 100px;
+  background-image: url(./pic/unknown.png);
+  border-radius: 50%;
+  background-size: cover;
+  /* box-shadow: -4px 2px 65px 12px #f9c05f; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.mercury {
+  height: 25px;
+  width: 25px;
+  background-image: url(./pic/mercury.png);
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #f9c05f;
+  left: 43%;
+  top: 42%;
+  transform: translate(-50%,-50%);
+  animation: orbit2 6s linear infinite;
+}
+
+@keyframes orbit2{
+  from{transform:rotate(0deg) translateX(70px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(70px) rotate(-360deg);}
+}
+
+.mercury-outline,.venus-outline-1,.earth-outline-1,.mars-outline-1,.jupiter-outline-1,.saturnus-outline-1,.uranus-outline-1,.neptune-outline-1{
+  border-radius: 50%;
+  border: 1px dotted #ddd9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.mercury-outline {
+  height: 140px;
+  width: 140px;
+}
+
+p {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  position: absolute;
+  left: -55px;
+  top: -10
+}
+
+.venus {
+  height: 30px;
+  width: 30px;
+  background-image: url(./pic/600px-Venus_globe_-_transparent_background.png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #f9c05f;
+  left: 40%;
+  top: 42%;
+  transform: translate(-50%,-50%);
+  animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3{
+  from{transform:rotate(0deg) translateX(95px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(95px) rotate(-360deg);}
+}
+
+.venus-outline-1 {
+  height: 200px;
+  width: 200px;
+}
+
+.asd {
+  animation: spin 30s linear alternate infinite;
+  background-image: url(./pic/Earth-Free-Download-PNG.png);
+}
+
+.earth {
+  height: 40px;
+  width: 40px;
+  background-image: url(./pic/Earth-Free-Download-PNG.png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #2855d6;
+  left: 44%;
+  top: 43%;
+  transform: translate(-50%,-50%);
+  animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4{
+  from{transform:rotate(0deg) translateX(150px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(150px) rotate(-360deg);}
+}
+
+.earth-outline-1 {
+  height: 300px;
+  width: 300px;
+}
+
+.earth-circle {
+  height: 55px;
+  width: 55px;
+  border: 1px dotted #fff;
+  position: relative;
+  left: -8px;
+  top: -8px;
+  border-radius: 40px;
+}
+
+.earth-inner {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 45%;
+  top: 45%;
+  animation: orbit5 3s linear infinite;
+}
+
+@keyframes orbit5{
+  from{transform:rotate(0deg) translateX(33px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(33px) rotate(-360deg);}
+}
+
+.mars {
+  height: 30px;
+  width: 30px;
+  background-image: url(./pic/unknown\ \(2\).png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #fea535;
+  left: 46.5%;
+  top: 46.5%;
+  transform: translate(-50%,-50%);
+  animation: orbit6 30s linear infinite;
+}
+
+@keyframes orbit6{
+  from{transform:rotate(0deg) translateX(185px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(185px) rotate(-360deg);}
+}
+
+.mars-outline-1 {
+  height: 370px;
+  width: 370px;
+}
+
+.jupiter {
+  height: 30px;
+  width: 30px;
+  background-image: url(./pic/Jupiter_28transparent29.png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  box-shadow: -4px 2px 56px #cac2b9;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  animation: orbit7 60s linear infinite;
+}
+
+@keyframes orbit7{
+  from{transform:rotate(0deg) translateX(215px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(215px) rotate(-360deg);}
+}
+
+.jupiter-outline-1 {
+  height: 430px;
+  width: 430px;
+}
+
+.saturnus {
+  height: 50px;
+  width: 50px;
+  background-image: url(./pic/580b585b2edbce24c47b270d.png);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  transform: translate(-50%,-50%);
+  animation: orbit8 90s linear infinite;
+}
+
+@keyframes orbit8{
+  from{transform:rotate(0deg) translateX(249px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(249px) rotate(-360deg);}
+}
+
+.saturnus-outline-1 {
+  height: 500px;
+  width: 500px;
+}
+
+.uranus {
+  height: 30px;
+  width: 30px;
+  background-image: url(./pic/Uranus2-transparent.png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  transform: translate(-50%,-50%);
+  animation: orbit9 160s linear infinite;
+}
+
+@keyframes orbit9{
+  from{transform:rotate(0deg) translateX(280px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(280px) rotate(-360deg);}
+}
+
+.uranus-outline-1 {
+  height: 560px;
+  width: 560px;
+}
+
+.neptune {
+  height: 30px;
+  width: 30px;
+  background-image: url(./pic/292-2924992_transiting-jupiter-trine-neptune-planet-neptune-vector-clipart.png);
+  border-radius: 50%;
+  background-size: 100%;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  transform: translate(-50%,-50%);
+  animation: orbit10 200s linear infinite;
+}
+
+@keyframes orbit10{
+  from{transform:rotate(0deg) translateX(310px) rotate(0deg);}
+  to{transform:rotate(360deg) translateX(310px) rotate(-360deg);}
+}
+
+.neptune-outline-1 {
+  height: 620px;
+  width: 620px;
+}
+
+.astro {
+  width: 200px;
+  top: 70px;
+  position: absolute;
+  right: 50px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.rocket {
+  width: 200px;
+  bottom: -50px;
+  top: 240px;
+  left: 30px;
+  position: absolute;
+  right: 50px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0,0,0, .30);
+  background: white;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+  width: 0px;
+}
