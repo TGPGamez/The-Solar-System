@@ -59,7 +59,7 @@ h1 {
     animation: scale 6s backwards cubic-bezier(0.5, 1, 0.89, 1);
     transition-delay: 6s;
     height: 10%;
-    padding: 25px;
+    padding-top: 50px;
 }
 
   @keyframes scale {
@@ -97,7 +97,7 @@ h1 {
 img {
     width: 250px;
     height: 250px;
-    animation: anyad 7s backwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation: anyad 6s backwards cubic-bezier(0.5, 1, 0.89, 1);
     position: relative;
     transition: ease 1s;
     border-radius: 20%;
