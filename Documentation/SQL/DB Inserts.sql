@@ -1,0 +1,74 @@
+INSERT INTO Languages(Culture, Name) VALUES('da-dk', 'Dansk');
+INSERT INTO Languages(Culture, Name) VALUES('en-us', 'English');
+INSERT INTO Languages(Culture, Name) VALUES('hu', 'Hungarian');
+
+
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(1, 'page.title', 'Solsystemet');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(2, 'page.title', 'The Solar System');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(3, 'page.title', 'A Naprendszer');
+
+
+INSERT INTO Planet(Name, ImagePath) VALUES('Mercury', 'photos\mercury.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Venus', 'photos\venus.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Earth', 'photos\earth.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Mars', 'photos\mars.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Jupiter', 'photos\jupiter.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Saturn', 'photos\saturn.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Uranus', 'photos\uranus.png');
+INSERT INTO Planet(Name, ImagePath) VALUES('Neptune', 'photos\neptune.png');
+
+
+--Mercury
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(1, 36, 3032, 88.0, 333, 0, 0);
+--Venus
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(2, 67.2, 7521, 224.8, 867, 91, 0);
+--Earth
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(3, 93, 7926, 365.2, 59, 1, 1);
+--Mars
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(4, 141.6, 4221, 698.0, -85, 0.01, 2);
+--Jupiter
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(5, 483.7, 88846, 4331, -166, null, 79);
+--Saturn
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(6, 889.8, 74897, 10747, -220, null, 82);
+--Uranus
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(7, 1781.5, 31763, 30589, -320, null, 27);
+--Neptune
+INSERT INTO Planet_Info(Planet_ID, LengthFromSun, Diameter, TravelTimeAroundSun, Temperature, AtmosphericPressure, NumberOfMoons) 
+VALUES(8, 2805.5, 30775, 59800, -330, null, 14);
+
+
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Mercury', 'This is {0} and is a {1} planet', 'Terrestrial');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Venus', 'This is {0} and is a {1} planet', 'Terrestrial');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Earth', 'This is {0} and is a {1} planet', 'Terrestrial');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Mars', 'This is {0} and is a {1} planet', 'Terrestrial');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Jupiter', 'This is {0} and is a {1} planet', 'Gas Giant');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Saturn', 'This is {0} and is a {1} planet', 'Gas Giant');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Uranus', 'This is {0} and is a {1} planet', 'Gas Giant');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Neptune', 'This is {0} and is a {1} planet', 'Gas Giant');
+
+
+--For language: en-us
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 1, 1);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 2, 2);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 3, 3);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 4, 4);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 5, 5);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 6, 6);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 7, 7);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(2, 8, 8);
+
