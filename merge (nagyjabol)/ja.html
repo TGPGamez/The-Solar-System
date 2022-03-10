@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./ja.css">
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="mercury" onclick="on1()">
+            <img src="./cropped/mercury-planetcropped.gif" width="25px" height="25px" alt="">
+            <p>Mercury</p>
+    </div>
+    <div class="mercury-outline">        
+    </div>
+    <div class="venus" onclick="on2()">
+            <p>Venus</p>
+    </div>
+    <div class="venus-outline-1">        
+    </div>
+    <div class="earth" onclick="on3()">
+            <div class="earth-circle">
+                <div class="earth-inner"></div>
+            </div>
+            <p>Earth</p>
+        </div>
+    <div class="earth-outline-1">
+    </div>
+    <div class="mars" onclick="on4()">
+            <p>Mars</p>
+        </div>
+    <div class="mars-outline-1">
+    </div>
+    <div class="jupiter" onclick="on5()">
+            <p>Jupiter</p>
+        </div>
+    <div class="jupiter-outline-1">
+    </div>
+    <div class="saturnus" onclick="on6()">
+            <p>Saturn</p>
+    </div>
+    <div class="saturnus-outline-1">
+    </div>
+    <div class="uranus" onclick="on7()">
+            <p>Uranus</p>
+        </div>
+    <div class="uranus-outline-1">
+    </div>
+    <div class="neptune" onclick="on8()">
+        <p>Neptune</p>
+    </div>
+    <div class="neptune-outline-1">
+    </div>
+    <div class="m">
+        <img src="./pic/astro.png" class="astro" alt="">
+    </div>
+    <div class="rocket" onclick="on1()">
+        <img src="./pic/toppng.com-meteorite-png-900x631.png" class="rocket" alt="">
+    </div>
+    <!-- <div class="popup">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa quod autem eius quam ipsam corporis cupiditate necessitatibus, nisi amet quaerat quidem recusandae sit fuga optio, odit distinctio consequatur quasi illo.
+        <a href="#" onclick="toggle()">Test</a>
+    </div> -->
+    <audio controls="" id="zene">
+        <source src="./Lucky Strike (320kbps).mp3" id="zene" type="audio/mp3">
+    </audio>
+
+    <!-- After a lot of things-->
+
+    <div id="overlay">
+      <img src="cancel.png" alt="" onclick="off()" id="cancel"></img>
+      <div id="window">
+        <div id="txtplanet1">
+          <p>The Mercury</p>
+          <h2>The Mercury is a very good thing</h2>
+        </div>
+        <div id="txtplanet2">
+          <p>The Venus</p>
+          <h2>The Venus is a very good thing</h2>
+        </div>
+        <div id="txtplanet3">
+          <p>The Earth</p>
+          <h2>The earth is a very good thing</h2>
+        </div>
+        <div id="txtplanet4">
+          <p>The Mars</p>
+          <h2>The Mars is a very good thing</h2>
+        </div>
+        <div id="txtplanet5">
+          <p>The Jupiter</p>
+          <h2>The Jupiter is a very good thing</h2>
+        </div>
+        <div id="txtplanet6">
+          <p>The Saturn</p>
+          <h2>The Saturn is a very good thing</h2>
+        </div>
+        <div id="txtplanet7">
+          <p>The Uranus</p>
+          <h2>The Uranus is a very good thing</h2>
+        </div>
+        <div id="txtplanet8">
+          <p>The Neptune</p>
+          <h2>The Neptune is a very good thing</h2>
+        </div>
+      </div>
+      <div id="imgplanet1">
+        <img          
+          src="./mercury-planetcropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet2">
+        <img          
+          src="./venuscropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet3">
+        <img          
+          src="./earthcopped2.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet4">
+        <img          
+          src="./marscropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet5">
+        <img          
+          src="./jupitercropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet6">
+        <img          
+          src="./saturncropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet7">
+        <img
+          src="./uranuscropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+      <div id="imgplanet8">
+        <img
+          src="./neptunecropped.gif"
+          alt=""
+          height="100%"
+          width="100%"
+        />
+      </div>
+    <script src="probe.js"></script>
+
+
+      <footer>
+        <div class="underbar">
+            <a  class="PlanetsOnMenu">
+            <img src="./mercury-planetcropped.gif" alt="" class="PlanetsOnMenuIMG" id="merc" onclick="on1()"></a>
+            <a  class="PlanetsOnMenu">
+            <img src="./venuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="venus" onclick="on2()"></a>
+            <a  class="PlanetsOnMenu">
+            <img src="./earthcopped2.gif" alt="" class="PlanetsOnMenuIMG" id="earth" onclick="on3()"></a>
+            <a  class="PlanetsOnMenu">
+            <img src="./marscropped.gif" alt="" class="PlanetsOnMenuIMG" id="mars" onclick="on4()"></a>
+            <a  class="PlanetsOnMenu">
+            <img src="./jupitercropped.gif" alt="" class="PlanetsOnMenuIMG" id="jupiter" onclick="on5()"></a>
+            <a class="PlanetsOnMenu">
+            <img src="./saturncropped.gif" alt="" class="PlanetsOnMenuIMG" id="saturn" onclick="on6()"></a>
+            <a class="PlanetsOnMenu">
+            <img src="./uranuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="uranus" onclick="on7()"></a>
+            <a class="PlanetsOnMenu">
+            <img src="./neptunecropped.gif" alt="" class="PlanetsOnMenuIMG" id="neptune" onclick="on8()"></a>
+        </div>
+    </footer>
+
+
+  </body>
+</html>
