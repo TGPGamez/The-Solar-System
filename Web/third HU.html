@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./third EN.css">
+</head>
+<body>
+
+    <div class="box">
+        <a class="button" href="#popup1">Változtasd meg a nyelvemet!</a>
+    </div>
+    <div class="valami">Jelenglegi nyelv:
+        &nbsp;
+        <img src="./pic/Flag_of_Hungary.png" class="valami2" alt="">
+    </div>
+    
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h1>Kérlek válassz másik nyelvet!</h1>
+            <a class="close" href="#">&times;</a>
+            <div class="row">
+                <div class="col-sm-4">
+                <h1><a href="third HU.html"><img src="./pic/Flag_of_Hungary.png" id="kurva" class="hmm" alt=""></a></h1>
+                    <h1>Magyar</h1>
+                </div>
+                <div class="col-sm-4">
+                    <h1><a href="third DK.html"><img src="./pic/denmarkc-logo-png-transparent.png" id="kurva"></a></h1>
+                    <h1>Dán</h1>
+                </div>
+                <div class="col-sm-4">
+                <h1><a href="third EN.html"><img src="./pic/640px-Flag_of_the_United_Kingdom.svg.png" id="kurva"></a></h1>  
+                    <h1>Angol</h1>
+                </div>       
+            </div>
+        </div>
+    </div>
+
+    <div class="sun"></div>
+    <div class="mercury-outline">
+        <div class="mercury">
+            <img src="./pic/mercury2.png" width="25px" height="25px" alt="">
+            <p>Merkúr</p>
+        </div>
+    </div>
+    <div class="venus-outline-1">
+        <div class="venus">
+            <p>Vénusz</p>
+        </div>
+    </div>
+    <div class="earth-outline-1">
+        <div class="earth">
+            <div class="earth-circle">
+                <div class="earth-inner"></div>
+            </div>
+            <p>Föld</p>
+        </div>
+    </div>
+    <div class="mars-outline-1">
+        <div class="mars">
+            <p>Mars</p>
+        </div>
+    </div>
+    <div class="jupiter-outline-1">
+        <div class="jupiter">
+            <p>Jupiter</p>
+        </div>
+    </div>
+    <div class="saturnus-outline-1">
+        <div class="saturnus">
+            <p>Saturn</p>
+        </div>
+    </div>
+    <div class="uranus-outline-1">
+        <div class="uranus">
+            <p>Uranus</p>
+        </div>
+    </div>
+    <div class="neptune-outline-1">
+        <div class="neptune">
+            <p>Neptune</p>
+        </div>
+    </div>
+    <div class="m">
+        <img src="./pic/astro.png" class="astro" alt="">
+    </div>
+    <div class="rocket">
+        <img src="./pic/toppng.com-meteorite-png-900x631.png" class="rocket" alt="">
+    </div>
+    <audio controls class="Aaudio">
+        <source src="./Lucky Strike (320kbps).mp3" id="zene" type="audio/mp3">
+    </audio>
+
+    <a href="./game/HU/jatekHU.html"><img src="./pic/1579012.png" class="game" alt=""></a>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

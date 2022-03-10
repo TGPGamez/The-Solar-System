@@ -55,8 +55,9 @@ p {
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   position: absolute;
-  left: -55px;
-  top: -10
+  font-size: 15px;
+  left: -50px;
+  top: -10px;
 }
 
 .venus {
@@ -258,8 +259,9 @@ p {
 }
 
 .astro {
-  width: 200px;
+  width: 15%;
   top: 70px;
+  height: auto;
   position: absolute;
   right: 50px;
   animation: float 6s ease-in-out infinite;
@@ -278,7 +280,8 @@ p {
 }
 
 .rocket {
-  width: 200px;
+  width: 35%;
+  height: auto;
   top: 280px;
   left: 30px;
   position: absolute;
@@ -320,6 +323,7 @@ html {
   padding: 16px;
   font-size: 16px;
   border: none;
+  height: auto;
   cursor: pointer;
   border-radius: 25px;
   float: right;
@@ -487,4 +491,28 @@ html {
   opacity: 0.85;
   filter: drop-shadow(10px 10px 7px gray);
   
+}
+
+.game {
+  width: 3%;
+  /* height: auto; */
+  top: 40%;
+  left  : 15px;
+  height: auto;
+  position: absolute;
+}
+
+.valami {
+  position: absolute;
+  top: 8%;
+  left: 22px;
+  color: white;
+}
+
+.valami2 {
+  position: absolute;
+  color: white;
+  width: 20%;
+  height: auto;
+  border-radius: 5px;
 }
