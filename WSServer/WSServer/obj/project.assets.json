@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSServer\\WSServer.csproj",
+      "projectUniqueName": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSServer\\WSServer.csproj",
       "projectName": "WSServer",
-      "projectPath": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSServer\\WSServer.csproj",
+      "projectPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSServer\\WSServer.csproj",
       "packagesPath": "C:\\Users\\Marc8847\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSServer\\obj\\",
+      "outputPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSServer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marc8847\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

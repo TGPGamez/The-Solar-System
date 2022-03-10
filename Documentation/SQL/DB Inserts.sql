@@ -53,6 +53,23 @@ INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES
 INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Uranus', 'This is {0} and is a {1} planet', 'Gas Giant');
 INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Neptune', 'This is {0} and is a {1} planet', 'Gas Giant');
 
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Merkur', 'Dette er {0} og er en {1} planet', 'Terrestrisk');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Venus', 'Dette er {0} og er en {1} planet', 'Terrestrisk');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Jorden', 'Dette er {0} og er en {1} planet', 'Terrestrisk');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Mars', 'Dette er {0} og er en {1} planet', 'Terrestrisk');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Jupiter', 'Dette er {0} og er en {1} planet', 'Gaskæmpe');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Saturn', 'Dette er {0} og er en {1} planet', 'Gaskæmpe');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Uranus', 'Dette er {0} og er en {1} planet', 'Gaskæmpe');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Neptun', 'Dette er {0} og er en {1} planet', 'Gaskæmpe');
+
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Merkúr', 'Ez a {0} és ez egy {1} bolygó', 'Föld tipusú');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Vénusz', 'Ez a {0} és ez egy {1} bolygó', 'Föld tipusú');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Föld', 'Ez a {0} és ez egy {1} bolygó', 'Föld tipusú');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Mars', 'Ez a {0} és ez egy {1} bolygó', 'Föld tipusú');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Jupiter', 'Ez a {0} és ez egy {1}', 'Gázóriás');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Szaturnusz', 'Ez a {0} és ez egy {1}', 'Gázóriás');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Uránusz', 'Ez az {0} és ez egy {1}', 'Gázóriás');
+INSERT INTO Planet_StringResources(Name, ShortDescription, StateOfMatter) VALUES('Neptunusz', 'Ez a {0} és ez egy {1}', 'Gázóriás');
 
 --For language: en-us
 INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
@@ -71,4 +88,22 @@ INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
 VALUES(2, 7, 7);
 INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
 VALUES(2, 8, 8);
+
+--For language: da-dk
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 1, 9);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 2, 10);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 3, 11);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 4, 12);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 5, 13);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 6, 14);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 7, 15);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(1, 8, 16);
 
