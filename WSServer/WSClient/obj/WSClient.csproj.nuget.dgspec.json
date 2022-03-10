@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSClient\\WSClient.csproj": {}
+    "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSClient\\WSClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSClient\\WSClient.csproj": {
+    "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSClient\\WSClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSClient\\WSClient.csproj",
+        "projectUniqueName": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSClient\\WSClient.csproj",
         "projectName": "WSClient",
-        "projectPath": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSClient\\WSClient.csproj",
+        "projectPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSClient\\WSClient.csproj",
         "packagesPath": "C:\\Users\\Marc8847\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marc8847\\Documents\\Github\\WSServer\\WSClient\\obj\\",
+        "outputPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\WSServer\\WSClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marc8847\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
