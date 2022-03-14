@@ -264,7 +264,7 @@ p {
 
 .astro {
   width: 15%;
-  top: 70px;
+  top: 5%;
   height: auto;
   position: absolute;
   right: 50px;
@@ -283,10 +283,10 @@ p {
   }
 }
 
-.rocket {
+.meteor {
   width: 35%;
   height: auto;
-  top: 280px;
+  bottom: 5%;
   left: 30px;
   position: absolute;
   right: 50px;
@@ -426,7 +426,7 @@ html {
 .popup {
     margin: 70px auto;
     padding: 20px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.658);
     border-radius: 5px;
     width: 50%;
     height: auto;
@@ -483,7 +483,7 @@ html {
   height: 100%;
 }
 
-#kurva {   
+.langSellectFlag {   
   position: relative;
   width: 100%;
   height: auto;
@@ -491,7 +491,7 @@ html {
 
 }
 
-#kurva:hover {
+.langSellectFlag:hover {
   opacity: 0.85;
   filter: drop-shadow(10px 10px 7px gray);
   
@@ -506,14 +506,14 @@ html {
   position: absolute;
 }
 
-.valami {
+.CurrentLangText {
   position: absolute;
-  top: 8%;
+  top: 10%;
   left: 22px;
   color: white;
 }
 
-.valami2 {
+.CurrentLangImg {
   position: absolute;
   color: white;
   width: 20%;
