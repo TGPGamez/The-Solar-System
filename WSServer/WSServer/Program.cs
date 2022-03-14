@@ -39,13 +39,17 @@ namespace WSServer
             {
                 NetworkStream stream = client.GetStream();
                 byte[] buffer = new byte[1024];
-                int byte_count = stream.Read(buffer, 0, buffer.Length);
-
-                if (byte_count == 0)
+                int byte_count;
+                try
                 {
-                    break;
+                    byte_count = stream.Read(buffer, 0, buffer.Length);
                 }
+                catch 
+                {
 
+                    break;
+                    
+                }
                 string data = Encoding.ASCII.GetString(buffer, 0, byte_count);
                 Broadcast(data);
                 Console.WriteLine(data);

@@ -11,7 +11,7 @@ namespace WSClient
     {
         static void Main(string[] args)
         {
-            IPAddress ip = IPAddress.Parse("127.0.0.1");
+            IPAddress ip = IPAddress.Parse("10.108.233.59");
             int port = 5000;
             TcpClient client = new TcpClient();
             client.Connect(ip, port);
@@ -24,7 +24,14 @@ namespace WSClient
             while (!string.IsNullOrEmpty((s = Console.ReadLine())))
             {
                 byte[] buffer = Encoding.ASCII.GetBytes(s);
-                ns.Write(buffer, 0, buffer.Length);
+                try
+                {
+                    ns.Write(buffer, 0, buffer.Length);
+                }
+                catch (Exception)
+                {
+                    break;
+                }
             }
             client.Client.Shutdown(SocketShutdown.Send);
             T.Join();
@@ -40,12 +47,19 @@ namespace WSClient
             byte[] receivedBytes = new byte[1024];
             int byte_count;
             string fString = "";
-
-            while ((byte_count = ns.Read(receivedBytes, 0, receivedBytes.Length)) > 0)
+            try
             {
-                fString = Encoding.ASCII.GetString(receivedBytes, 0, byte_count);
-                Console.WriteLine("Output: " + fString);
-                ChoosenPlanet(fString);
+                while ((byte_count = ns.Read(receivedBytes, 0, receivedBytes.Length)) > 0)
+                {
+                    fString = Encoding.ASCII.GetString(receivedBytes, 0, byte_count);
+                    Console.WriteLine("Output: " + fString);
+                    ChoosenPlanet(fString);
+                }
+
+            }
+            catch (Exception)
+            {
+               return;
             }
         }
 
@@ -54,28 +68,28 @@ namespace WSClient
             Console.WriteLine("Test");
             switch (data)
             {
-                case "Mercury":
+                case "mercury":
                     Console.WriteLine("this is Mercury");
                     break;
-                case "Venus":
+                case "venus":
                     Console.WriteLine("this is Venus");
                     break ;
-                case "Earth":
+                case "earth":
                     Console.WriteLine("this is Earth");
                     break;
-                case "Mars":
+                case "mars":
                     Console.WriteLine("this is Mars");
                     break;
-                case "Jupiter":
+                case "jupiter":
                     Console.WriteLine("this is Jupiter");
                     break;
-                case "Saturn":
+                case "saturn":
                     Console.WriteLine("this is Saturn");
                     break;
-                case "Uranus":
+                case "uranus":
                     Console.WriteLine("this is Uranus");
                     break;
-                case "Neptune":
+                case "neptune":
                     Console.WriteLine("this is Neptune");
                     break;
                 default:

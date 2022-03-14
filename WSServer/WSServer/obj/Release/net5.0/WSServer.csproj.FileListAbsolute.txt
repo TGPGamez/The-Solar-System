@@ -1,0 +1,16 @@
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.exe
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.deps.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.runtimeconfig.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.runtimeconfig.dev.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\bin\Release\net5.0\WSServer.pdb
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.csproj.AssemblyReference.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.AssemblyInfoInputs.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.AssemblyInfo.cs
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.csproj.CoreCompileInputs.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\refint\WSServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.pdb
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\WSServer.genruntimeconfig.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServer\obj\Release\net5.0\ref\WSServer.dll
