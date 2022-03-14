@@ -14,5 +14,71 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../pic/starry-night-sky-free-photo.jpeg");
+    background-size: 100%;
+    text-decoration: none;
+}
+
+
+.solar_system_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sun {
+    height: 100px;
+    width: 100px;
+    background-image: url("../pic/sun.png");
+    border-radius: 50%;
+    background-size: cover;
+    /* box-shadow: -4px 2px 65px 12px #f9c05f; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mercury {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    position: absolute;
+    animation: rotation 3s infinite linear;
+    border-radius: 50%;
+    padding: 90px;
+    border: 1px solid silver;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mercury::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("../pic/mercury2.png");
+    position: absolute;
+    border-radius: 50%;
+    margin: 51px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+
+p {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: -55px;
+    top: -10;
 }

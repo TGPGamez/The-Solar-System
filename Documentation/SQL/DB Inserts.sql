@@ -107,3 +107,21 @@ VALUES(1, 7, 15);
 INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
 VALUES(1, 8, 16);
 
+--For language: hu
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 1, 17);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 2, 18);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 3, 19);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 4, 20);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 5, 21);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 6, 22);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 7, 23);
+INSERT INTO Languages_Planet(Language_ID, Planet_ID, PSR_ID)
+VALUES(3, 8, 24);
+
