@@ -5,9 +5,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-size: 100%;
-    text-decoration: none;
+    /*background-size: 100%;
+    text-decoration: none;*/
+    position:relative;
+    height:100vh;
 }
+
+
+
 
 .sun {
     height: 100px;
@@ -358,6 +363,8 @@ p {
 html {
     overflow: scroll;
     overflow-x: hidden;
+    position:relative;
+    height:100vh;
 }
 
 ::-webkit-scrollbar {
@@ -417,6 +424,8 @@ html {
 .show {
     display: block;
 }
+
+
 
 
 /*h1 {
@@ -603,6 +612,7 @@ html {
     z-index: 2;
 }
 
+/* fixed?*/
 #window {
     position: fixed;
     display: none;
@@ -611,7 +621,7 @@ html {
     width: 46.5%;
     height: 60%;
     border-radius: 10%;
-    background-image: url(../pic/csilag.gif);
+    background-image: url(../pic/overlay/galaxy.gif);
     z-index: 3;
     text-align: center;
     background-position: center;
@@ -620,6 +630,24 @@ html {
     background-size: cover;
     border-width: 5px;
     border-color: white;
+}
+
+/* txtplanet1-8 are similar */
+#txtplanet1,
+#txtplanet2,
+#txtplanet3,
+#txtplanet4,
+#txtplanet5,
+#txtplanet6,
+#txtplanet7,
+#txtplanet8 {
+    position: absolute;
+    top: 15vw;
+    left: 20vw;
+    font-size: 12px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -644,7 +672,12 @@ html {
     position: absolute;
     top: 0%;
     left: 98.5%;
+    border-radius: 5px;
+    background-color: aqua;
 }
+
+
+
 
 #imgplanet1 {
     position: fixed;
@@ -728,36 +761,66 @@ html {
 
 
 #merc {
-    width: 45px;
+    width: 4vw;
+    position: absolute;
+    left: 0%;
+    top: 0vh;
 }
 
 #venus {
-    width: 60px;
+    width: 6vw;
+    position: absolute;
+    left: 10%;
+    top: 0vh;
 }
 
 #earth {
-    width: 60px;
+    width: 6vw;
+    position: absolute;
+    left: 20%;
+    top: 0vh;
+}
+
+
+#mars {
+    width: 5vw;
+    position: absolute;
+    left: 30%;
+    top: 0vw;
 }
 
 #jupiter {
-    width: 50px;
+    width: 5vw;
+    position: absolute;
+    left: 45%;
+    top: 0vw;
 }
 
-#mars {
-    width: 50px;
-}
+
+
 
 #saturn {
-    width: 90px;
+    width: 9vw;
+    position: absolute;
+    left: 60%;
+    top: 0vw;
+}
+
+
+#uranus {
+    width: 5vw;
+    position: absolute;
+    left: 82%;
+    top: 0vw;
 }
 
 #neptune {
-    width: 60px;
+    width: 6vw;
+    position: absolute;
+    left: 90%;
+    top: 0vw;
 }
 
-#uranus {
-    width: 50px;
-}
 
 #cancel {
     width: 25px;
@@ -771,8 +834,8 @@ html {
 .navbar {
     background-color: rgba(51, 51, 51, 0);
     overflow: hidden;
-    position: fixed;
-    bottom: -27px;
+    position: absolute;
+    bottom: -560px;
     width: 100%;
 }
 
@@ -789,33 +852,170 @@ html {
 
         /* Change the color of links on hover */
         .navbar a:hover {
-            background-color: rgba(255, 255, 255, 0.267);
+            /*background-color: rgba(255, 255, 255, 0.267);*/
             color: gray;
             border-radius: 50%;
         }
 
         /* Add a color to the active/current link */
         .navbar a.active {
-            background-color: orange;
+            background-color:;
             color: white;
         }
 
 div.underbar {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.377);
+    /*background-color: rgba(0, 0, 0, 0.377);*/
     bottom: 0;
-    border-radius: 40px;
+    border-radius: 4vw;
     border-style: solid;
     border-width: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index:5;
+    width: 60vw;
+    height: 7vw;
+
 }
 
 a.PlanetsOnMenu {
     margin-right: 1px;
     margin-left: 1px;
+    height: 5vw;
+    width: 5vw;
 }
 
 img.PlanetsOnMenuIMG {
-    width: 55px;
+    width: 10px;
+}
+
+footer {
+    position: relative;
+}
+
+/* White thing behind the planets 1: mercury - 8: Neptune */
+#whiteplanet1 {
+    left:5vw;
+}
+#whiteplanet2 {
+    left:1vw;
+}
+#whiteplanet3 {
+    left: 15vw;
+}
+#whiteplanet4 {
+    left: 20vw;
+}
+#whiteplanet5 {
+    left: 25vw;
+}
+#whiteplanet6 {
+    left: 30vw;
+}
+#whiteplanet7 {
+    left: 35vw;
+}
+#whiteplanet8 {
+    left: 40vw;
+}
+
+
+.pb-3{
+    position: relative;
+    height: 100vh;
+}
+#neptunegomb {
+    left: 74%;
+    position: absolute;
+    background-image: url(../pic/surfaces/neptsurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#uranusgomb {
+    left: 66%;
+    position: absolute;
+    background-image: url(../pic/surfaces/uransurf.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#saturngomb {
+    left: 58%;
+    position: absolute;
+    background-image: url(../pic/surfaces/satsurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#jupitergomb {
+    left: 50%;
+    position: absolute;
+    background-image: url(../pic/surfaces/juptsurf.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#marsgomb {
+    left: 42%;
+    position: absolute;
+    background-image: url(../pic/surfaces/marssurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#earthgomb {
+    left: 34%;
+    position: absolute;
+    background-image: url(../pic/surfaces/earthsurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#venusgomb {
+    left: 26%;
+    position: absolute;
+    background-image: url(../pic/surfaces/vensurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
+}
+
+#mercgomb {
+    left: 18%;
+    position: absolute;
+    background-image: url(../pic/surfaces/neptsurf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: 2px 2px;
+    border-radius: 15%;
 }
