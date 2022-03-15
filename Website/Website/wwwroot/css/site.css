@@ -590,14 +590,7 @@ html {
 
 /* Sanyi's code */
 
-#cancel {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 0%;
-    left: 98.5%;
-    cursor: pointer;
-}
+
 
 #overlay {
     position: fixed;
@@ -612,7 +605,7 @@ html {
     z-index: 2;
 }
 
-/* fixed?*/
+
 #window {
     position: fixed;
     display: none;
@@ -676,8 +669,24 @@ html {
     background-color: aqua;
 }
 
+/*#cancel {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0%;
+    left: 98.5%;
+    cursor: pointer;
+}
 
-
+#cancel {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0%;
+    left: 98.5%;
+    cursor: pointer;
+}
+    */
 
 #imgplanet1 {
     position: fixed;
@@ -688,7 +697,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet2 {
     position: fixed;
     display: none;
@@ -698,7 +706,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet3 {
     position: fixed;
     display: none;
@@ -708,7 +715,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet4 {
     position: fixed;
     display: none;
@@ -718,7 +724,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet5 {
     position: fixed;
     display: none;
@@ -728,7 +733,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet6 {
     position: fixed;
     display: none;
@@ -738,7 +742,6 @@ html {
     height: 35%;
     z-index: 3;
 }
-
 #imgplanet7 {
     position: fixed;
     display: none;
@@ -748,7 +751,6 @@ html {
     height: 50%;
     z-index: 3;
 }
-
 #imgplanet8 {
     position: fixed;
     display: none;
@@ -766,102 +768,83 @@ html {
     left: 0%;
     top: 0vh;
 }
-
 #venus {
     width: 6vw;
     position: absolute;
     left: 10%;
     top: 0vh;
 }
-
 #earth {
     width: 6vw;
     position: absolute;
-    left: 20%;
+    left: 22%;
     top: 0vh;
 }
-
-
 #mars {
     width: 5vw;
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 0vw;
 }
-
 #jupiter {
     width: 5vw;
     position: absolute;
-    left: 45%;
+    left: 48%;
     top: 0vw;
 }
-
-
-
-
 #saturn {
     width: 9vw;
     position: absolute;
     left: 60%;
     top: 0vw;
 }
-
-
 #uranus {
     width: 5vw;
     position: absolute;
-    left: 82%;
+    left: 77%;
     top: 0vw;
 }
-
 #neptune {
     width: 6vw;
     position: absolute;
-    left: 90%;
+    left: 87.35%;
     top: 0vw;
 }
 
 
-#cancel {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 0%;
-    left: 98.5%;
-    cursor: pointer;
-}
+
 
 .navbar {
     background-color: rgba(51, 51, 51, 0);
     overflow: hidden;
     position: absolute;
-    bottom: -560px;
+    top: 95%;
     width: 100%;
 }
 
     /* Style the links inside the navigation bar */
-    .navbar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
         /* Change the color of links on hover */
-        .navbar a:hover {
-            /*background-color: rgba(255, 255, 255, 0.267);*/
-            color: gray;
-            border-radius: 50%;
-        }
+.navbar a:hover {
+    /*background-color: rgba(255, 255, 255, 0.267);*/
+    color: gray;
+    border-radius: 50%;
+}
 
         /* Add a color to the active/current link */
-        .navbar a.active {
-            background-color:;
-            color: white;
-        }
+.navbar a.active {
+    background-color:;
+    color: white;
+}
 
 div.underbar {
     position: fixed;
@@ -919,13 +902,14 @@ footer {
     left: 40vw;
 }
 
-
 .pb-3{
     position: relative;
     height: 100vh;
 }
+
 #neptunegomb {
     left: 74%;
+    bottom: 5%;
     position: absolute;
     background-image: url(../pic/surfaces/neptsurf.jpg);
     background-position: center;
@@ -935,7 +919,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #uranusgomb {
     left: 66%;
     position: absolute;
@@ -947,7 +930,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #saturngomb {
     left: 58%;
     position: absolute;
@@ -959,7 +941,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #jupitergomb {
     left: 50%;
     position: absolute;
@@ -971,7 +952,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #marsgomb {
     left: 42%;
     position: absolute;
@@ -983,7 +963,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #earthgomb {
     left: 34%;
     position: absolute;
@@ -995,7 +974,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #venusgomb {
     left: 26%;
     position: absolute;
@@ -1007,7 +985,6 @@ footer {
     box-shadow: 2px 2px;
     border-radius: 15%;
 }
-
 #mercgomb {
     left: 18%;
     position: absolute;
