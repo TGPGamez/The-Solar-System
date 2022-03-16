@@ -1,34 +1,39 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Website.Models;
+using Website.Services;
 
 namespace Website.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILanguageService languageService, ILocalizationService localizationService)
+            : base(languageService, localizationService)
         {
-            _logger = logger;
+
         }
 
         public IActionResult Index()
         {
-            DBManager dbManager = new DBManager();
-            dbManager.GetPlanetsFromCulture("da-dk");
+            // ViewData["Title"] = Localize("customer.page.create.title");
+
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpPost]
+        public IActionResult ChangeLanguage(string culture, string returnUrl)
         {
-            return View();
-        }
+            Response.Cookies.Append(
+                CookieRequestCultureProvider.DefaultCookieName,
+                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
+                new CookieOptions
+                {
+                    Expires = DateTimeOffset.UtcNow.AddDays(7)
+                }
+            );
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return LocalRedirect(returnUrl);
         }
     }
 }
