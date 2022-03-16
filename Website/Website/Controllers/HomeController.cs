@@ -15,6 +15,8 @@ namespace Website.Controllers
 
         public IActionResult Index()
         {
+            DBManager dbManager = new DBManager();
+            dbManager.GetPlanetsFromCulture("da-dk");
             return View();
         }
 
