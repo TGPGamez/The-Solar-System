@@ -8625,23 +8625,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kastr\\.nuget\\packages\\": {},
+    "C:\\Users\\Gergő\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kastr\\OneDrive\\Dokumentumok\\GitHub\\The-Solar-System\\Website\\Website\\Website.csproj",
+      "projectUniqueName": "C:\\Users\\Gergő\\Downloads\\The-Solar-System-main(4)\\The-Solar-System-main\\Website\\Website\\Website.csproj",
       "projectName": "Website",
-      "projectPath": "C:\\Users\\kastr\\OneDrive\\Dokumentumok\\GitHub\\The-Solar-System\\Website\\Website\\Website.csproj",
-      "packagesPath": "C:\\Users\\kastr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kastr\\OneDrive\\Dokumentumok\\GitHub\\The-Solar-System\\Website\\Website\\obj\\",
+      "projectPath": "C:\\Users\\Gergő\\Downloads\\The-Solar-System-main(4)\\The-Solar-System-main\\Website\\Website\\Website.csproj",
+      "packagesPath": "C:\\Users\\Gergő\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gergő\\Downloads\\The-Solar-System-main(4)\\The-Solar-System-main\\Website\\Website\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\kastr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gergő\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

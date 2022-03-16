@@ -634,8 +634,13 @@ html {
 #txtplanet6,
 #txtplanet7,
 #txtplanet8 {
-    top: 15%;
+    position: absolute;
+    top: 15vw;
+    left: 20vw;
+    font-size: 12px;
     color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 
@@ -821,7 +826,7 @@ html {
 .navbar a {
     float: left;
     display: block;
-    color: black;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -829,11 +834,11 @@ html {
 }
 
         /* Change the color of links on hover */
-    .navbar a:hover {
-        /*background-color: rgba(255, 255, 255, 0.267);*/
-        color: #595959;
-        border-radius: 50%;
-    }
+.navbar a:hover {
+    /*background-color: rgba(255, 255, 255, 0.267);*/
+    color: gray;
+    border-radius: 50%;
+}
 
         /* Add a color to the active/current link */
 .navbar a.active {
@@ -903,7 +908,8 @@ footer {
 }
 
 #neptunegomb {
-    left: 80%;
+    left: 74%;
+    bottom: 5%;
     position: absolute;
     background-image: url(../pic/surfaces/neptsurf.jpg);
     background-position: center;
@@ -911,10 +917,10 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 2px 2px;
-    border-radius: 15px;
+    border-radius: 15%;
 }
 #uranusgomb {
-    left: 70%;
+    left: 66%;
     position: absolute;
     background-image: url(../pic/surfaces/uransurf.png);
     background-position: center;
@@ -925,7 +931,7 @@ footer {
     border-radius: 15%;
 }
 #saturngomb {
-    left: 60%;
+    left: 58%;
     position: absolute;
     background-image: url(../pic/surfaces/satsurf.jpg);
     background-position: center;
@@ -947,7 +953,7 @@ footer {
     border-radius: 15%;
 }
 #marsgomb {
-    left: 40%;
+    left: 42%;
     position: absolute;
     background-image: url(../pic/surfaces/marssurf.jpg);
     background-position: center;
@@ -958,7 +964,7 @@ footer {
     border-radius: 15%;
 }
 #earthgomb {
-    left: 30%;
+    left: 34%;
     position: absolute;
     background-image: url(../pic/surfaces/earthsurf.jpg);
     background-position: center;
@@ -969,7 +975,7 @@ footer {
     border-radius: 15%;
 }
 #venusgomb {
-    left: 20%;
+    left: 26%;
     position: absolute;
     background-image: url(../pic/surfaces/vensurf.jpg);
     background-position: center;
@@ -980,7 +986,7 @@ footer {
     border-radius: 15%;
 }
 #mercgomb {
-    left: 10%;
+    left: 18%;
     position: absolute;
     background-image: url(../pic/surfaces/neptsurf.jpg);
     background-position: center;
@@ -989,7 +995,4 @@ footer {
     background-size: cover;
     box-shadow: 2px 2px;
     border-radius: 15%;
-}
-h2 {
-    text-align: center;
 }
