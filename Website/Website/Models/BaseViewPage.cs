@@ -6,6 +6,7 @@ namespace Website.Models
 {
     public abstract class BaseViewPage<TModel> : Microsoft.AspNetCore.Mvc.Razor.RazorPage<TModel>
     {
+
         [RazorInject]
         public ILanguageService LanguageService { get; set; }
 

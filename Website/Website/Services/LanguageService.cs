@@ -13,6 +13,7 @@ namespace Website.Services
 
         public Language GetLanguageByCulture(string culture)
         {
+            _contextDB.UpdatePlanetsFromCulture(culture);
             return _contextDB.Languages.FirstOrDefault(l => 
                 l.Culture.Trim().ToLower() == culture.Trim().ToLower());
         }

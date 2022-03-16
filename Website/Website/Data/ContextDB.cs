@@ -8,6 +8,41 @@ namespace Website.Data
 {
     public partial class ContextDB : DbContext
     {
+        private List<PlanetModel> PlanetsFromCulture = new List<PlanetModel>();
+
+        public void UpdatePlanetsFromCulture(string culture)
+        {
+            List<PlanetModel> temp = new List<PlanetModel>();
+
+            var result = (from p in Planets
+                          join pInfo in PlanetInfos on p.Id equals pInfo.PlanetId
+                          join lp in LanguagesPlanets on p.Id equals lp.PlanetId
+                          join psr in PlanetStringResources on lp.PsrId equals psr.Id
+                          join l in Languages on lp.LanguageId equals l.Id
+                          where l.Culture == culture
+                          select new
+                          {
+                              Search_Name = p.Name,
+                              Name = psr.Name,
+                              ShortDescription = psr.ShortDescription,
+                              StateOfMatter = psr.StateOfMatter,
+                              LengthFromSun = pInfo.LengthFromSun,
+                              Diameter = pInfo.Diameter,
+                              TravelTimeAroundSun = pInfo.TravelTimeAroundSun,
+                              Temperature = pInfo.Temperature,
+                              AtmosphericPressure = pInfo.AtmosphericPressure,
+                              NumberOfMoons = pInfo.NumberOfMoons
+                          }).ToList();
+            foreach (var item in result)
+            {
+                PlanetModel pModel = new PlanetModel();
+                pModel.General = new Planet();
+                pModel.General.Name = item.Name;
+                pModel.Info = new PlanetInfo();
+                
+            }
+        }
+
         public ContextDB()
         {
         }

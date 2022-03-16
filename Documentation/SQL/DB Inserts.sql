@@ -3,10 +3,13 @@ INSERT INTO Languages(Culture, Name) VALUES('en-us', 'English');
 INSERT INTO Languages(Culture, Name) VALUES('hu', 'Hungarian');
 
 
-INSERT INTO StringResources(Language_ID, Name, Value) VALUES(1, 'page.title', 'Solsystemet');
-INSERT INTO StringResources(Language_ID, Name, Value) VALUES(2, 'page.title', 'The Solar System');
-INSERT INTO StringResources(Language_ID, Name, Value) VALUES(3, 'page.title', 'A Naprendszer');
 
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(1, 'SolarSystem.Language.Title', 'Vælg et sprog!');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(2, 'SolarSystem.Language.Title', 'Please select another language!');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(3, 'SolarSystem.Language.Title', 'Kérlek válassz egy másik nyelvet!');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(1, 'SolarSystem.Language.ChangeTitle', 'Skift sprog');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(2, 'SolarSystem.Language.ChangeTitle', 'Change my language');
+INSERT INTO StringResources(Language_ID, Name, Value) VALUES(3, 'SolarSystem.Language.ChangeTitle', 'Változtasd meg a nyelvet');
 
 INSERT INTO Planet(Name, ImagePath) VALUES('Mercury', 'photos\mercury.png');
 INSERT INTO Planet(Name, ImagePath) VALUES('Venus', 'photos\venus.png');

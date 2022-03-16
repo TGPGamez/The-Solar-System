@@ -26,9 +26,10 @@
 </head>
 <body>
 
-    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-        <ul class="navbar-nav flex-grow-1">
-            <li class="nav-item">
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h1>@Localize("SolarSystem.Language.Title")</h1>
+            <div class="row">
                 <form asp-action="ChangeLanguage" asp-controller="Home" method="post">
                     <input type="hidden" id="returnUrl" name="returnUrl" value="@returnUrl" />
                     <select id="culture"
@@ -39,8 +40,8 @@
                             asp-for="@requestCulture.RequestCulture.UICulture.Name">
                     </select>
                 </form>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     
     <div class="container">
