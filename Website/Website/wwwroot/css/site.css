@@ -973,6 +973,7 @@ footer {
     background-size: cover;
     box-shadow: 2px 2px;
     border-radius: 15%;
+    color: gray;
 }
 #venusgomb {
     left: 20%;
