@@ -19,7 +19,7 @@ namespace Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ILanguageService, LanguageService>();
-            services.AddScoped<ILocalizationService, LocalizationLanguageService>();
+            services.AddScoped<ILocalizationService, LocalizationService>();
 
             services.AddDbContext<ContextDB>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));

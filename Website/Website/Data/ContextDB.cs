@@ -8,20 +8,46 @@ namespace Website.Data
 {
     public partial class ContextDB : DbContext
     {
-        private List<PlanetModel> PlanetsFromCulture = new List<PlanetModel>();
+        private List<PlanetModel> planetsInDatabase;
+
+        public List<PlanetModel> PlanetInDatabase
+        {
+            get { return planetsInDatabase; }
+            set { planetsInDatabase = value; }
+        }
+
 
         public void UpdatePlanetsFromCulture(string culture)
         {
-            List<PlanetModel> temp = new List<PlanetModel>();
+            planetsInDatabase.Clear();
 
+            //var result = (from p in Planets
+            //              join pInfo in PlanetInfos on p.Id equals pInfo.PlanetId
+            //              join lp in LanguagesPlanets on p.Id equals lp.PlanetId
+            //              join psr in PlanetStringResources on lp.PsrId equals psr.Id
+            //              join l in Languages on lp.LanguageId equals l.Id
+            //              where l.Culture == culture
+            //              select new
+            //              {
+            //                  Culture = l.Culture,
+            //                  Search_Name = p.Name,
+            //                  Name = psr.Name,
+            //                  ShortDescription = psr.ShortDescription,
+            //                  StateOfMatter = psr.StateOfMatter,
+            //                  LengthFromSun = pInfo.LengthFromSun,
+            //                  Diameter = pInfo.Diameter,
+            //                  TravelTimeAroundSun = pInfo.TravelTimeAroundSun,
+            //                  Temperature = pInfo.Temperature,
+            //                  AtmosphericPressure = pInfo.AtmosphericPressure,
+            //                  NumberOfMoons = pInfo.NumberOfMoons
+            //              }).ToList();
             var result = (from p in Planets
                           join pInfo in PlanetInfos on p.Id equals pInfo.PlanetId
                           join lp in LanguagesPlanets on p.Id equals lp.PlanetId
                           join psr in PlanetStringResources on lp.PsrId equals psr.Id
-                          join l in Languages on lp.LanguageId equals l.Id
-                          where l.Culture == culture
                           select new
                           {
+                              LanguageID = lp.LanguageId,
                               Search_Name = p.Name,
                               Name = psr.Name,
                               ShortDescription = psr.ShortDescription,
@@ -36,20 +62,30 @@ namespace Website.Data
             foreach (var item in result)
             {
                 PlanetModel pModel = new PlanetModel();
-                pModel.General = new Planet();
+                pModel.Search_Name = item.Search_Name;
+                pModel.LanguageID = item.LanguageID;
                 pModel.General.Name = item.Name;
-                pModel.Info = new PlanetInfo();
-                
+                pModel.Info.LengthFromSun = item.LengthFromSun;
+                pModel.Info.ShortDescription = item.ShortDescription;
+                pModel.Info.StateOfMatter = item.StateOfMatter;
+                pModel.Info.Diameter = item.Diameter;
+                pModel.Info.TravelTimeAroundSun = item.TravelTimeAroundSun;
+                pModel.Info.Temperature = item.Temperature;
+                pModel.Info.AtmosphericPressure = item.AtmosphericPressure;
+                pModel.Info.NumberOfMoons = item.NumberOfMoons;
+                planetsInDatabase.Add(pModel);
             }
         }
 
         public ContextDB()
         {
+            planetsInDatabase = new List<PlanetModel>();
         }
 
         public ContextDB(DbContextOptions<ContextDB> options)
             : base(options)
         {
+            planetsInDatabase = new List<PlanetModel>();
         }
 
         public virtual DbSet<Language> Languages { get; set; } = null!;

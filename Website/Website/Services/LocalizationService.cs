@@ -3,11 +3,11 @@ using Website.Models;
 
 namespace Website.Services
 {
-    public class LocalizationLanguageService : ILocalizationService
+    public class LocalizationService : ILocalizationService
     {
         private readonly ContextDB _context;
 
-        public LocalizationLanguageService(ContextDB context)
+        public LocalizationService(ContextDB context)
         {
             _context = context;
         }

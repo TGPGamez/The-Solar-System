@@ -12,6 +12,8 @@ namespace Website.Models
 
         [RazorInject]
         public ILocalizationService LocalizationService { get; set; }
+        [RazorInject]
+        public IPlanetService PlanetService { get; set; }
 
         public delegate HtmlString Localizer(string resourceKey, params object[] args);
         private Localizer _localizer;
@@ -39,6 +41,36 @@ namespace Website.Models
                             return new HtmlString((args == null || args.Length == 0)
                                 ? stringResource.Value
                                 : string.Format(stringResource.Value, args));
+                        };
+                    }
+                }
+                return _localizer;
+            }
+        }
+
+        public Localizer PlanetNameLocalize
+        {
+            get
+            {
+                if (_localizer == null)
+                {
+                    var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+
+                    var language = LanguageService.GetLanguageByCulture(currentCulture);
+                    if (language != null)
+                    {
+                        _localizer = (resourceKey, args) =>
+                        {
+                            PlanetModel planetModel = PlanetService.GetPlanetModel(resourceKey, language.Id);
+
+                            if (planetModel == null)
+                            {
+                                return new HtmlString(resourceKey);
+                            }
+
+                            return new HtmlString((args == null || args.Length == 0)
+                                ? planetModel.General.Name
+                                : string.Format(planetModel.General.Name, args));
                         };
                     }
                 }
