@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Website.Extensions;
 using Website.Models;
 
 namespace Website.Data
@@ -73,6 +74,7 @@ namespace Website.Data
                 pModel.Info.Temperature = item.Temperature;
                 pModel.Info.AtmosphericPressure = item.AtmosphericPressure;
                 pModel.Info.NumberOfMoons = item.NumberOfMoons;
+                pModel.FormatDesc();
                 planetsInDatabase.Add(pModel);
             }
         }

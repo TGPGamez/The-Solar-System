@@ -12,10 +12,5 @@
             General = new Planet();
             Info = new PlanetInfo();
         }
-
-        public override string ToString()
-        {
-            return base.ToString();
-        }
     }
 }

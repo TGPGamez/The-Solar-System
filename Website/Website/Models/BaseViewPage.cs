@@ -48,22 +48,21 @@ namespace Website.Models
             }
         }
 
-        private Localizer _localizerPlanet;
+        private Localizer _localizerPlanetName;
         public Localizer LocalizePlanetName
         {
             get
             {
-                if (_localizerPlanet == null)
+                if (_localizerPlanetName == null)
                 {
                     var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 
                     var language = LanguageService.GetLanguageByCulture(currentCulture);
                     if (language != null)
                     {
-                        _localizerPlanet = (resourceKey, args) =>
+                        _localizerPlanetName = (resourceKey, args) =>
                         {
                             PlanetModel planetModel = PlanetService.GetPlanetModel(resourceKey, language.Id);
-                            Console.WriteLine(resourceKey + ": " + planetModel.General.Name);
                             if (planetModel == null)
                             {
                                 return new HtmlString(resourceKey);
@@ -75,7 +74,37 @@ namespace Website.Models
                         };
                     }
                 }
-                return _localizerPlanet;
+                return _localizerPlanetName;
+            }
+        }
+
+        private Localizer _localizerPlanetDesc;
+        public Localizer LocalizePlanetDesc
+        {
+            get
+            {
+                if (_localizerPlanetDesc == null)
+                {
+                    var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
+
+                    var language = LanguageService.GetLanguageByCulture(currentCulture);
+                    if (language != null)
+                    {
+                        _localizerPlanetDesc = (resourceKey, args) =>
+                        {
+                            PlanetModel planetModel = PlanetService.GetPlanetModel(resourceKey, language.Id);
+                            if (planetModel == null)
+                            {
+                                return new HtmlString(resourceKey);
+                            }
+
+                            return new HtmlString((args == null || args.Length == 0)
+                                ? planetModel.Info.ShortDescription
+                                : string.Format(planetModel.Info.ShortDescription, args));
+                        };
+                    }
+                }
+                return _localizerPlanetDesc;
             }
         }
     }
