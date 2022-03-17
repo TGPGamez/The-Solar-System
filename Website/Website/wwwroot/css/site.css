@@ -908,8 +908,7 @@ footer {
 }
 
 #neptunegomb {
-    left: 74%;
-    bottom: 5%;
+    left: 80%;
     position: absolute;
     background-image: url(../pic/surfaces/neptsurf.jpg);
     background-position: center;
@@ -917,10 +916,11 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 2px 2px;
-    border-radius: 15px;
+    border-radius: 15%;
+   
 }
 #uranusgomb {
-    left: 66%;
+    left: 70%;
     position: absolute;
     background-image: url(../pic/surfaces/uransurf.png);
     background-position: center;
@@ -931,7 +931,7 @@ footer {
     border-radius: 15%;
 }
 #saturngomb {
-    left: 58%;
+    left: 60%;
     position: absolute;
     background-image: url(../pic/surfaces/satsurf.jpg);
     background-position: center;
@@ -953,7 +953,7 @@ footer {
     border-radius: 15%;
 }
 #marsgomb {
-    left: 42%;
+    left: 40%;
     position: absolute;
     background-image: url(../pic/surfaces/marssurf.jpg);
     background-position: center;
@@ -964,7 +964,7 @@ footer {
     border-radius: 15%;
 }
 #earthgomb {
-    left: 34%;
+    left: 30%;
     position: absolute;
     background-image: url(../pic/surfaces/earthsurf.jpg);
     background-position: center;
@@ -975,7 +975,7 @@ footer {
     border-radius: 15%;
 }
 #venusgomb {
-    left: 26%;
+    left: 20%;
     position: absolute;
     background-image: url(../pic/surfaces/vensurf.jpg);
     background-position: center;
@@ -986,7 +986,7 @@ footer {
     border-radius: 15%;
 }
 #mercgomb {
-    left: 18%;
+    left: 10%;
     position: absolute;
     background-image: url(../pic/surfaces/neptsurf.jpg);
     background-position: center;
@@ -994,5 +994,13 @@ footer {
     background-attachment: fixed;
     background-size: cover;
     box-shadow: 2px 2px;
-    border-radius: 15%;
+    border-radius:15%;
+}
+h2 {
+    text-align: center;
+    top: 5px;
+
+}
+h4 {
+    text-align: center;
 }
