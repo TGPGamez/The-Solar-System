@@ -8,11 +8,13 @@ namespace Website.Controllers
     {
         private readonly ILanguageService _languageService;
         private readonly ILocalizationService _localizationService;
+        private readonly IPlanetService _planetService;
 
-        public BaseController(ILanguageService languageService, ILocalizationService localizationService)
+        public BaseController(ILanguageService languageService, ILocalizationService localizationService, IPlanetService planetService)
         {
             _languageService = languageService;
             _localizationService = localizationService;
+            _planetService = planetService;
         }
 
         public HtmlString Localize(string resourceKey, params object[] args)

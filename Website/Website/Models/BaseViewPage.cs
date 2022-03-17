@@ -48,21 +48,22 @@ namespace Website.Models
             }
         }
 
-        public Localizer PlanetNameLocalize
+        private Localizer _localizerPlanet;
+        public Localizer LocalizePlanetName
         {
             get
             {
-                if (_localizer == null)
+                if (_localizerPlanet == null)
                 {
                     var currentCulture = Thread.CurrentThread.CurrentUICulture.Name;
 
                     var language = LanguageService.GetLanguageByCulture(currentCulture);
                     if (language != null)
                     {
-                        _localizer = (resourceKey, args) =>
+                        _localizerPlanet = (resourceKey, args) =>
                         {
                             PlanetModel planetModel = PlanetService.GetPlanetModel(resourceKey, language.Id);
-
+                            Console.WriteLine(resourceKey + ": " + planetModel.General.Name);
                             if (planetModel == null)
                             {
                                 return new HtmlString(resourceKey);
@@ -74,7 +75,7 @@ namespace Website.Models
                         };
                     }
                 }
-                return _localizer;
+                return _localizerPlanet;
             }
         }
     }

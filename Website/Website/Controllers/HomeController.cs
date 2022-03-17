@@ -8,8 +8,8 @@ namespace Website.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(ILanguageService languageService, ILocalizationService localizationService)
-            : base(languageService, localizationService)
+        public HomeController(ILanguageService languageService, ILocalizationService localizationService, IPlanetService planetService)
+            : base(languageService, localizationService, planetService)
         {
 
         }
