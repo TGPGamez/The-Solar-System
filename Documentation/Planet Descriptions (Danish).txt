@@ -1,0 +1,44 @@
+
+
+#Mercury
+Dette er $name og er en $stateOfMatter planet, 
+der lige omtrent er $diameter kilometer i diameter og som desuden er rimelig varm ($temperature grader Fahrenheit).
+
+
+#Venus
+Dette er $name og er en $stateOfMatter planet,
+der lige omtrent er $diameter kilometer i diameter og er mega varm ($temperature grader Fahrenheit).
+
+
+#Earth
+Dette er $name og er vores lille hyggelige hjem, der er en masse liv og mange forskellige livsformer, vores hjem er omkring $diameter kilometer i diameter 
+og har en temperatur på cirka $temperature grader Fahrenheit.
+
+
+#Mars
+Dette er $name og er ca $diameter kilometer i diameter og er en meget kold planet ($temperature grader Fahrenheit).
+​$name er den fjerde planet fra solen – er en støvet, kold, ørken verden med en meget tynd atmosfære og
+også en dynamisk planet med årstider, polare iskapper, kløfter, uddøde vulkaner og beviser på, at den var endnu mere aktiv i fortiden.
+
+
+#Jupiter
+Dette er $name, og det er omtrent $diameter kilometer i diameter og meget kold planet ($temperature grader Fahrenheit).
+$name kaldes en $stateOfMatter planet. Dens atmosfære består hovedsagelig af brintgas og heliumgas, ligesom solen. Planeten er dækket af tykke røde, brune, gule og hvide skyer.
+Skyerne får planeten til at se ud som om den har striber. En af $name mest berømte funktioner er den Store Røde Plet.
+
+
+#Saturn
+Dette er $name og er en $stateOfMatter planet, der hovedsageligt består af brint og helium. ($temperature grader Fahrenheit)
+$name's volume er 76 gange større end Jordens, og det er den næstmest massive planet i solsystemet.
+Den Ringede Planet er den mindst tætte af alle planeter og er den eneste mindre tæt end vand.
+
+
+#Uranus
+Dette er $name og er den syvende planet fra Solen og har den tredjestørste diameter ($diameter kilometer) i vores solsystem
+og er $stateOfMatter planeten, der er den koldeste planet i vores solsystem ($temperature grader Fahrenheit).
+
+
+#Neptune
+Dette er $name og er en isgigant. Det ligesom en $stateOfMatter og ligner Uranus.
+Den er lavet af en tyk suppe af vand, ammoniak og metan, der flyder over en fast kerne på størrelse med Jorden.
+$name har en tyk blæsende atmosfære. Det er også en rigtig kold planet ($temperature grader Fahrenheit).

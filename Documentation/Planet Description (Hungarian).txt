@@ -1,0 +1,35 @@
+#Mercury
+Ez a $name, ez egy $stateofMatter bolygó,
+nagyjából $diameter kilóméter az átmérője, és elég forró van arra ($temperature Fahrenheit-fok)
+
+#Venus
+Ez a $name, ez egy $stateOfMatter bolygó,
+nagyjából $diameter kilóméter az átmérője, és nagyon, nagyon meleg van arra ($temperature Fahrenheit-fok)
+
+#Earth
+Ez a $name, és egy nagyon szép, kerek bolygó, sokféle faj van rajta, az átmérője nagyjából $diameter kilóméter, 
+a hőmérséklete $temperature Fahrenheit-fok.
+
+#Mars
+Ez a $name, és nagyjából $diameter kilóméter az átmérője, és egy nagyon hideg bolygó ($temperature Fahrenheit-fok). 
+A $name a negyedik bolygó a Naptól - egy poros, hideg, sivatagos világ nagyon vékony légkörrel, és egy sokszor változó bolygó évszakokkal, 
+sarkköri jégsapkákkal, kanyonokkal, kialudt vulkánokkal, és bizonyítékokkal arról, hogy a múltban ezek a vulkánok aktívak voltak.
+
+#Jupiter
+Ez a $name és nagyjából $diameter kilométer átmérőjű és egy nagyon hideg bolygó ($temperature Fahrenheit)
+A $name egy $stateOfMatter típusú bolygó. Az atmoszférája többségében hidrogénből és héliumból van, ugyan úgy mint a nap. A bolygót piros, barna, sárga és fehér felhők fedik be.
+A felhők miatt úgy néz ki a bolygó mintha csíkokkal lenne tele. A $name leghíresebb látványossága  a Nagy Vörös Folt.
+
+#Saturn
+Ez a $name és ez egy $stateOfMatter bolygó, ami nagyrészt hidrogénből és héliumból épül fel (hőmérséklete $temperature Fahrenheit-fok). 
+A $name térfogata 76-szor nagyobb, mint a Föld, és ez a második legnagyobb bolygó a Naprendszerben. A Gyűrűs Bolygónak van a legkisebb 
+sűrűsége az összes bolygó közül, ez az egyetlen, aminek sűrűsége kisebb, mint a víznek.
+
+#Uranus
+Ez a $name és ez a hetedik bolygó a Naptól, és neki van a harmadik legnagyobb átmérője a Naprendszerünkben ($diameter kilóméter). 
+Ez egy $stateOfMatter bolygó, ami a leghidegebb bolygó a Naprendszerünkben ($temperature Fehrenheit-fok).
+
+#Neptune
+Ez a $name , hasonlóan az Uranushoz, ez egy jég óriás. Ez hasonló a $stateOfMatter-hez/höz/hoz. Ez egy vastag levesnyi vízből áll, 
+ammónia és metán áramlik a szilárd mag körül, aminek nagysága a Földéhez hasonló. A $name-nak vastag, viharos légköre van. 
+Ez is egy hideg bolygó ($temperature Fahrenheit-fok).

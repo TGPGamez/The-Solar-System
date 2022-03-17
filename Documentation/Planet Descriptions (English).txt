@@ -1,0 +1,44 @@
+
+
+#Mercury
+This is $name and is a $stateOfMatter planet, 
+it is roughly $diameter kilometers in diameter and is a quite hot ($temperature degress Fahrenheit)
+
+
+#Venus
+This is $name and is a $stateOfMatter planet,
+it is roughly $diameter kilometers in diameter and its very, very hot planet ($temperature degrees Fahrenheit).
+
+
+#Earth
+This is $name and it is a very nice, roundy planet, there is lot of life on it, the diameter is roughly $diameter kilometers in diameter
+and the temperature is $temperature Fahrenheit.
+
+
+#Mars
+This is $name and it is roughly $diameter kilometers in diameter and its very cold planet ($temperature degress Fahrenheit).
+​$name is the fourth planet from the Sun – a dusty, cold, desert world with a very thin atmosphere and
+also a dynamic planet with seasons, polar ice caps, canyons, extinct volcanoes, and evidence that it was even more active in the past.
+
+
+#Jupiter
+This is $name and it is roughly $diameter kilometers in diameter and very cold planet ($temperature degress Fahrenheit).
+$name is called a $stateOfMatter planet. Its atmosphere is made up of mostly hydrogen gas and helium gas, like the sun. The planet is covered in thick red, brown, yellow and white clouds.
+The clouds make the planet look like it has stripes. One of $name's most famous features is the Great Red Spot.
+
+
+#Saturn
+This is $name and is a $stateOfMatter planet made up mostly of hydrogen and helium. ($temperature degress Fahrenheit)
+$name's volume is 76x bigger than Earth, and it is the second most massive planet in the solar system.
+The Ringed Planet is the least dense of all the planets, and is the only one less dense than water.
+
+
+#Uranus
+This is $name and is the seventh planet from the Sun, and has the third-largest diameter ($diameter kilometers) in our solar system
+and is $stateOfMatter planet that is coldest planet in our solar system ($temperature degress Fahrenheit).
+
+
+#Neptune
+This is $name and its like like Uranus, is an ice giant. It's similar to a $stateOfMatter.
+It is made of a thick soup of water, ammonia, and methane flowing over a solid core about the size of Earth. 
+$name has a thick windy atmosphere. It's also a really cold planet ($temperature degress Fahrenheit).
