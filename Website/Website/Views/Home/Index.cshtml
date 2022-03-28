@@ -97,7 +97,7 @@
               
                 <h2>@LocalizePlanetName("Mercury")</h2>
                
-                      <h4>@LocalizePlanetDesc("Mercury")</h4>
+                <h4>@LocalizePlanetDesc("Mercury")</h4>
               </div>
               <div id="txtplanet2">
                 <h2>@LocalizePlanetName("Venus")</h2>
@@ -213,36 +213,44 @@
             <footer>
                 <div class="underbar">
                     <a  class="PlanetsOnMenu" id="whiteplanet1">
-                    <img src="../pic/overlay/mercury-planetcropped.gif" alt="" class="PlanetsOnMenuIMG" id="merc" onclick="on1()"></a>
+                    <img src="../pic/overlay/mercury-planetcropped.gif" alt="" class="PlanetsOnMenuIMG" id="merc" onclick="planetDisplay(1, 'mercury')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet2">
-                    <img src="../pic/overlay/venuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="venus" onclick="on2()"></a>
+                    <img src="../pic/overlay/venuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="venus" onclick="planetDisplay(2, 'venus')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet3">
-                    <img src="../pic/overlay/earthcopped2.gif" alt="" class="PlanetsOnMenuIMG" id="earth" onclick="on3()"></a>
+                    <img src="../pic/overlay/earthcopped2.gif" alt="" class="PlanetsOnMenuIMG" id="earth" onclick="planetDisplay(3, 'earth')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet4">
-                    <img src="../pic/overlay/marscropped.gif" alt="" class="PlanetsOnMenuIMG" id="mars" onclick="on4()"></a>
+                    <img src="../pic/overlay/marscropped.gif" alt="" class="PlanetsOnMenuIMG" id="mars" onclick="planetDisplay(4, 'mars')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet5">
-                    <img src="../pic/overlay/jupitercropped.gif" alt="" class="PlanetsOnMenuIMG" id="jupiter" onclick="on5()"></a>
+                    <img src="../pic/overlay/jupitercropped.gif" alt="" class="PlanetsOnMenuIMG" id="jupiter" onclick="planetDisplay(5, 'jupiter')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet6">
-                    <img src="../pic/overlay/saturncropped.gif" alt="" class="PlanetsOnMenuIMG" id="saturn" onclick="on6()"></a>
+                    <img src="../pic/overlay/saturncropped.gif" alt="" class="PlanetsOnMenuIMG" id="saturn" onclick="planetDisplay(6, 'saturn')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet7">
-                    <img src="../pic/overlay/uranuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="uranus" onclick="on7()"></a>
+                    <img src="../pic/overlay/uranuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="uranus" onclick="planetDisplay(7, 'uranus')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet8">
-                    <img src="../pic/overlay/neptunecropped.gif" alt="" class="PlanetsOnMenuIMG" id="neptune" onclick="on8()"></a>
+                    <img src="../pic/overlay/neptunecropped.gif" alt="" class="PlanetsOnMenuIMG" id="neptune" onclick="planetDisplay(8, 'neptune')"></a>
                 </div>
             </footer>
         </div>
-  
-        
-      
-      
-        <a href="#news"  id="mercgomb"  onclick="on1()">@LocalizePlanetName("Mercury")</a>
-        <a href="#contact"  id="venusgomb" class="venuszz" onclick="on2()">@LocalizePlanetName("Venus")</a>
-        <a href="#about"  id="earthgomb" onclick="on3()">@LocalizePlanetName("Earth")</a>
-        <a href="#about"  id="marsgomb" onclick="on4()">@LocalizePlanetName("Mars")</a>
-        <a href="#about"  id="jupitergomb" onclick="on5()">@LocalizePlanetName("Jupiter")</a>
-        <a href="#about"  id="saturngomb" onclick="on6()">@LocalizePlanetName("Saturn")</a>
-        <a href="#about"  id="uranusgomb" onclick="on7()">@LocalizePlanetName("Uranus")</a>
-        <a href="#about"  id="neptunegomb" onclick="on8()">@LocalizePlanetName("Neptune")</a>
+
+        <button type="submit" id="mercgomb" value="mercury" onclick="planetDisplay(1)" name="planet">@LocalizePlanetName("Mercury")</button>
+        <button type="submit" id="venusgomb" value="venus" onclick="planetDisplay(2)" name="planet">@LocalizePlanetName("Venus")</button>
+        <button type="submit" id="earthgomb" value="earth" onclick="planetDisplay(3)" name="planet">@LocalizePlanetName("Earth")</button>
+        <button type="submit" id="marsgomb" value="mars" onclick="planetDisplay(4)" name="planet">@LocalizePlanetName("Mars")</button>
+        <button type="submit" id="jupitergomb" value="jupiter" onclick="planetDisplay(5)" name="planet">@LocalizePlanetName("Jupiter")</button>
+        <button type="submit" id="saturngomb" value="saturn" onclick="planetDisplay(6)" name="planet">@LocalizePlanetName("Saturn")</button>
+        <button type="submit" id="uranusgomb" value="uranus" onclick="planetDisplay(7)" name="planet">@LocalizePlanetName("Uranus")</button>
+        <button type="submit" id="neptunegomb" value="neptune" onclick="planetDisplay(8)" name="planet">@LocalizePlanetName("Neptune")</button>
+
+
+
+       @* <a href="#news" id="mercgomb" onclick="planetDisplay(1, 'mercury')">@LocalizePlanetName("Mercury")</a>
+        <a href="#contact" id="venusgomb" class="venuszz" onclick="planetDisplay(2, 'venus')">@LocalizePlanetName("Venus")</a>
+        <a href="#about" id="earthgomb" onclick="planetDisplay(3, 'earth')">@LocalizePlanetName("Earth")</a>
+        <a href="#about" id="marsgomb" onclick="planetDisplay(4, 'mars')">@LocalizePlanetName("Mars")</a>
+        <a href="#about" id="jupitergomb" onclick="planetDisplay(5, 'jupiter')">@LocalizePlanetName("Jupiter")</a>
+        <a href="#about" id="saturngomb" onclick="planetDisplay(6, 'saturn')">@LocalizePlanetName("Saturn")</a>
+        <a href="#about" id="uranusgomb" onclick="planetDisplay(7, 'uranus')">@LocalizePlanetName("Uranus")</a>
+        <a href="#about" id="neptunegomb" onclick="planetDisplay(8, 'neptune')">@LocalizePlanetName("Neptune")</a>*@
       
         
         
