@@ -9454,19 +9454,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tobias Prang\\.nuget\\packages\\": {}
+    "C:\\Users\\Marc8847\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tobias Prang\\OneDrive\\Dokumenter\\GitHub\\The-Solar-System\\Website\\Website\\Website.csproj",
+      "projectUniqueName": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\Website\\Website\\Website.csproj",
       "projectName": "Website",
-      "projectPath": "C:\\Users\\Tobias Prang\\OneDrive\\Dokumenter\\GitHub\\The-Solar-System\\Website\\Website\\Website.csproj",
-      "packagesPath": "C:\\Users\\Tobias Prang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tobias Prang\\OneDrive\\Dokumenter\\GitHub\\The-Solar-System\\Website\\Website\\obj\\",
+      "projectPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\Website\\Website\\Website.csproj",
+      "packagesPath": "C:\\Users\\Marc8847\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marc8847\\Documents\\Github\\The-Solar-System\\Website\\Website\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tobias Prang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marc8847\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9531,7 +9531,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

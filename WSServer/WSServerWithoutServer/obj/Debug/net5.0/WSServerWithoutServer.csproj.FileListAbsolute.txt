@@ -1,0 +1,16 @@
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.csproj.AssemblyReference.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.AssemblyInfoInputs.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.AssemblyInfo.cs
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.csproj.CoreCompileInputs.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.exe
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.deps.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.runtimeconfig.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.runtimeconfig.dev.json
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\bin\Debug\net5.0\WSServerWithoutServer.pdb
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\refint\WSServerWithoutServer.dll
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.pdb
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\WSServerWithoutServer.genruntimeconfig.cache
+C:\Users\Marc8847\Documents\Github\The-Solar-System\WSServer\WSServerWithoutServer\obj\Debug\net5.0\ref\WSServerWithoutServer.dll

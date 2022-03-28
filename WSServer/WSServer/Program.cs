@@ -9,8 +9,8 @@ namespace WSServer
 {
     internal class Program
     {
-        static readonly object _lock = new object();
         static readonly Dictionary<int, TcpClient> list_clients = new Dictionary<int, TcpClient>();
+        static readonly object _lock = new object();
         static void Main(string[] args)
         {
             int count = 1;
