@@ -31,3 +31,41 @@ function off() {
         document.getElementById("txtplanet" + i).style.display = "none";
     }
 }
+
+
+var socket = new WebSocket("ws://192.168.1.143:5000")
+
+socket.onmessage = function (event) {
+    let planetchoosen = decider(event.data);
+    if(planetchoosen > 0 && planetchoosen < 9){
+        planetDisplay(planetchoosen);
+    } else{
+        off();
+    }
+}
+
+function send(message){
+    socket.send(message)
+}
+
+function decider(receivedmessage){
+    switch(receivedmessage){
+        case 'mercury':
+            return 1;
+        case 'venus':
+            return 2;
+        case 'earth':
+            return 3;
+        case 'mars':
+            return 4;
+        case 'jupiter':
+            return 5;
+        case 'saturn':
+            return 6;
+        case 'uranus':
+            return 7;
+        case 'neptune':
+            return 8;
+        default: return 0;
+    }
+}

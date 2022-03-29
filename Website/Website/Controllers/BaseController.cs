@@ -74,7 +74,10 @@ namespace Website.Controllers
                 {
                     return new HtmlString(resourceKey);
                 }
-
+                if (planetModel.Info == null || planetModel.Info.ShortDescription == null)
+                {
+                    return new HtmlString(resourceKey);
+                }
                 return new HtmlString((args == null || args.Length == 0)
                     ? planetModel.Info.ShortDescription
                     : string.Format(planetModel.Info.ShortDescription, args));

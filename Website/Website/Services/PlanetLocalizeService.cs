@@ -14,9 +14,14 @@ namespace Website.Services
 
         public PlanetModel GetPlanetModel(string search_name, int languageId)
         {
-            return _context.PlanetInDatabase.FirstOrDefault(x =>
+            PlanetModel? planetModel = _context.PlanetInDatabase.FirstOrDefault(x =>
                     x.Search_Name.Trim().ToLower() == search_name.Trim().ToLower()
                     && x.LanguageID == languageId);
+            if (planetModel == null)
+            {
+                planetModel = new PlanetModel();
+            }
+            return planetModel;
         }
     }
 }

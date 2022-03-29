@@ -91,7 +91,7 @@
     <!-- Sanyi's code -->
     <div class="navbar" id="myNavbar">
         <div id="overlay">
-            <img src="../pic/overlay/cancel.png" alt="" onclick="off()" id="cancel"></img>
+            <img src="../pic/overlay/cancel.png" alt="" onclick="send('none')" id="cancel"></img>
             <div id="window">
               <div id="txtplanet1">
               
@@ -213,33 +213,33 @@
             <footer>
                 <div class="underbar">
                     <a  class="PlanetsOnMenu" id="whiteplanet1">
-                    <img src="../pic/overlay/mercury-planetcropped.gif" alt="" class="PlanetsOnMenuIMG" id="merc" onclick="planetDisplay(1, 'mercury')"></a>
+                    <img src="../pic/overlay/mercury-planetcropped.gif" alt="" class="PlanetsOnMenuIMG" id="merc" onclick="send('mercury')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet2">
-                    <img src="../pic/overlay/venuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="venus" onclick="planetDisplay(2, 'venus')"></a>
+                    <img src="../pic/overlay/venuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="venus" onclick="send('venus')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet3">
-                    <img src="../pic/overlay/earthcopped2.gif" alt="" class="PlanetsOnMenuIMG" id="earth" onclick="planetDisplay(3, 'earth')"></a>
+                    <img src="../pic/overlay/earthcopped2.gif" alt="" class="PlanetsOnMenuIMG" id="earth" onclick="send('earth')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet4">
-                    <img src="../pic/overlay/marscropped.gif" alt="" class="PlanetsOnMenuIMG" id="mars" onclick="planetDisplay(4, 'mars')"></a>
+                    <img src="../pic/overlay/marscropped.gif" alt="" class="PlanetsOnMenuIMG" id="mars" onclick="send('mars')"></a>
                     <a  class="PlanetsOnMenu" id="whiteplanet5">
-                    <img src="../pic/overlay/jupitercropped.gif" alt="" class="PlanetsOnMenuIMG" id="jupiter" onclick="planetDisplay(5, 'jupiter')"></a>
+                    <img src="../pic/overlay/jupitercropped.gif" alt="" class="PlanetsOnMenuIMG" id="jupiter" onclick="send('jupiter')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet6">
-                    <img src="../pic/overlay/saturncropped.gif" alt="" class="PlanetsOnMenuIMG" id="saturn" onclick="planetDisplay(6, 'saturn')"></a>
+                    <img src="../pic/overlay/saturncropped.gif" alt="" class="PlanetsOnMenuIMG" id="saturn" onclick="send('saturn')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet7">
-                    <img src="../pic/overlay/uranuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="uranus" onclick="planetDisplay(7, 'uranus')"></a>
+                    <img src="../pic/overlay/uranuscropped.gif" alt="" class="PlanetsOnMenuIMG" id="uranus" onclick="send('uranus')"></a>
                     <a class="PlanetsOnMenu" id="whiteplanet8">
-                    <img src="../pic/overlay/neptunecropped.gif" alt="" class="PlanetsOnMenuIMG" id="neptune" onclick="planetDisplay(8, 'neptune')"></a>
+                    <img src="../pic/overlay/neptunecropped.gif" alt="" class="PlanetsOnMenuIMG" id="neptune" onclick="send('neptune')"></a>
                 </div>
             </footer>
         </div>
 
-        <button type="submit" id="mercgomb" value="mercury" onclick="planetDisplay(1)" name="planet">@LocalizePlanetName("Mercury")</button>
-        <button type="submit" id="venusgomb" value="venus" onclick="planetDisplay(2)" name="planet">@LocalizePlanetName("Venus")</button>
-        <button type="submit" id="earthgomb" value="earth" onclick="planetDisplay(3)" name="planet">@LocalizePlanetName("Earth")</button>
-        <button type="submit" id="marsgomb" value="mars" onclick="planetDisplay(4)" name="planet">@LocalizePlanetName("Mars")</button>
-        <button type="submit" id="jupitergomb" value="jupiter" onclick="planetDisplay(5)" name="planet">@LocalizePlanetName("Jupiter")</button>
-        <button type="submit" id="saturngomb" value="saturn" onclick="planetDisplay(6)" name="planet">@LocalizePlanetName("Saturn")</button>
-        <button type="submit" id="uranusgomb" value="uranus" onclick="planetDisplay(7)" name="planet">@LocalizePlanetName("Uranus")</button>
-        <button type="submit" id="neptunegomb" value="neptune" onclick="planetDisplay(8)" name="planet">@LocalizePlanetName("Neptune")</button>
+        <button type="submit" id="mercgomb" value="mercury" onclick="send('mercury')" name="planet">@LocalizePlanetName("Mercury")</button>
+        <button type="submit" id="venusgomb" value="venus" onclick="send('venus')" name="planet">@LocalizePlanetName("Venus")</button>
+        <button type="submit" id="earthgomb" value="earth" onclick="send('earth')" name="planet">@LocalizePlanetName("Earth")</button>
+        <button type="submit" id="marsgomb" value="mars" onclick="send('mars')" name="planet">@LocalizePlanetName("Mars")</button>
+        <button type="submit" id="jupitergomb" value="jupiter" onclick="send('jupiter')" name="planet">@LocalizePlanetName("Jupiter")</button>
+        <button type="submit" id="saturngomb" value="saturn" onclick="send('saturn')" name="planet">@LocalizePlanetName("Saturn")</button>
+        <button type="submit" id="uranusgomb" value="uranus" onclick="send('uranus')" name="planet">@LocalizePlanetName("Uranus")</button>
+        <button type="submit" id="neptunegomb" value="neptune" onclick="send('neptune')" name="planet">@LocalizePlanetName("Neptune")</button>
 
 
 
